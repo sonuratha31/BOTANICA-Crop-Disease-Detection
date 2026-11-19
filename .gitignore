@@ -1,0 +1,37 @@
+# Local Python environments
+.venv/
+venv/
+env/
+
+# Training data is not needed by the deployed application
+dataset/
+
+# Python bytecode and caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Exclude only recovery checkpoints; keep the application model and labels
+models/recovery/
+
+# Temporary files and local logs
+*.tmp
+*.temp
+*.bak
+*.orig
+*.swp
+*~
+~$*
+*.log
+
+# OS metadata and local secrets
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
